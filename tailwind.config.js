@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/*.html'],
+  mode: 'jit',
+  content: ['./public/**.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Barlow': ['Barlow Condensed', 'regular']
+      },
+      backgroundImage: {
+        'background': "url('../assets/home/background-home-desktop.jpg')"
+      },
+      margin: {
+        '12.5px': '3.5rem',
+      }
+    },
   },
   plugins: [],
 }
