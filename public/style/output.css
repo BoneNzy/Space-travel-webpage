@@ -551,8 +551,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-12 {
-  margin-left: 3rem;
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-86 {
+  top: 23rem;
+}
+
+.left-40 {
+  left: 10rem;
 }
 
 .ml-12\.5px {
@@ -563,8 +575,20 @@ video {
   margin-top: 2.5rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-86 {
+  height: 23rem;
+}
+
+.w-108 {
+  width: 28.125rem;
 }
 
 .flex-row {
@@ -612,6 +636,53 @@ video {
   font-family: Barlow Condensed, regular;
 }
 
+.font-Bellefair {
+  font-family: Bellefair, sans sarif;
+}
+
+.text-2\.5xl {
+  font-size: 1.75rem;
+}
+
+.text-10xl {
+  font-size: 9.3rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.tracking-custom-widest {
+  letter-spacing: 0.297rem;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-custom-blue {
+  --tw-text-opacity: 1;
+  color: rgb(208 214 249 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
