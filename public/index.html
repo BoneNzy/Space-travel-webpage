@@ -8,49 +8,71 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style/output.css">
 </head>
 <body class="bg-fixed bg-cover bg-no-repeat bg-background">
-  <header class="font-Barlow">
-    <nav class="nav-container flex justify-between bg-blue-300 ml-12.5px mt-10">
-      <div class="flex p-2 bg-no-repeat justify-center"><img src="./assets/shared/logo.svg" alt="logo"></div>
-      <ul  class="flex flex-row uppercase">
-        <li class="p-5">
-          <span>00</span>
+  <header class="relative flex justify-between items-center font-Barlow-Condensed h-24 top-10">
+    <!-- Logo -->
+    <div class="absolute flex bg-no-repeat justify-center left-13.5">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+
+    <!-- Horizontal Bar -->
+    <div class="absolute bg-white w-108 h-0.5 opacity-25
+    mix-blend-normal left-10.5 top-12">
+    </div>
+
+    <nav class="absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
+    w-nav h-24 right-0">
+      <ul  class="absolute flex flex-row text-white uppercase tracking-widest left-30">
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">00</span>
             <a href="">Home</a>
         </li>
-        <li class="p-5">
-          <span>01</span>
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">01</span>
           <a href="">Destination</a>
         </li>
-        <li class="p-5">
-          <span>02</span>
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">02</span>
           <a href="">Crew</a>
         </li>
-        <li class="p-5">
-          <span>03</span>
+        <li class="">
+          <span class="font-bold mr-0.6">03</span>
           <a href="">Technology</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <section class="relative w-108 h-86 top-86 left-40">
-    <h5 class="text-custom-blue font-Barlow uppercase text-2.5xl tracking-custom-widest">So, you want to travel to</h5>
+  <section class="relative flex justify-around items-center top-60">
+    <!-- Some Articles -->
+    <article class="w-108">
+      <h5 class="text-custom-blue font-Barlow-Condensed uppercase text-2.5xl tracking-custom-widest">
+        So, you want to travel to
+      </h5>
 
-    <h1 class="text-white text-10xl font-Bellefair uppercase">Space</h1>
+      <h1 class="text-white text-10xl font-Bellefair uppercase">
+        Space
+      </h1>
 
-    <p class="text-custom-blue text-lg font-normal tracking-wide font-Barlow leading-8">
-      Let’s face it; if you want to go to space, you might as well genuinely go to
-      outer space and not hover kind of on the edge of it. Well sit back, and relax
-      because we’ll give you a truly out of this world experience!
-    </p>
+      <p class="text-custom-blue text-lg font-normal tracking-wide font-Barlow leading-8">
+        L et’s face it; if you want to go to space, you might as well genuinely go to
+        outer space and not hover kind of on the edge of it. Well sit back, and relax
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </article>
+    <!-- The Explore -->
+    <!-- <aside class="hover-explore"> -->
+      <aside class="relative flex hover-explore justify-center items-center w-68 h-68 bg-white rounded-full">
+        <p class="text-3xl uppercase font-Bellefair tracking-widest">
+          Explore
+        </p>
+      </aside>
+    <!-- </aside> -->
   </section>
-
-
-  <!-- Explore -->
 
 </body>
 </html>

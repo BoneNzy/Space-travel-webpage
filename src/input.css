@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-explore:hover::before {
+    content: '';
+    position: absolute;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    cursor: pointer;
+}
