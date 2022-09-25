@@ -10,7 +10,10 @@ module.exports = {
         'Bellefair': ['Bellefair', 'sans sarif']
       },
       backgroundImage: {
-        'background': "url('../assets/home/background-home-desktop.jpg')"
+        'background-home': "url('../assets/home/background-home-desktop.jpg')",
+        'background-destination': "url('../assets/destination/background-destination-desktop.jpg')",
+        'background-crew': "url('../assets/crew/background-crew-desktop.jpg')",
+        'background-tech': "url('../assets/technology/background-technology-desktop.jpg')",
       },
       margin: {
         '0.6': '0.688rem',
