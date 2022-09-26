@@ -778,6 +778,42 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+body {
+  background: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 6rem;
+  top: 2.5rem;
+}
+
+/* absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
+    w-nav h-24 right-0 */
+
+.nav-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 51.875rem;
+  height: 6rem;
+  right: 0;
+}
+
+.numbers {
+  font-weight: bold;
+  margin-right: 0.688rem;
+}
+
+/* Hover effects */
+
 .hover-explore:hover::before {
   content: '';
   position: absolute;
