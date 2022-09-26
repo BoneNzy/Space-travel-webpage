@@ -603,6 +603,14 @@ video {
   top: 15rem;
 }
 
+.top-80 {
+  top: 20rem;
+}
+
+.top-44 {
+  top: 11rem;
+}
+
 .mr-12 {
   margin-right: 3rem;
 }
@@ -625,6 +633,14 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.inline-grid {
+  display: inline-grid;
 }
 
 .h-24 {
@@ -655,12 +671,24 @@ video {
   width: 27.8rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-68 {
   width: 17rem;
 }
 
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
 .flex-row {
   flex-direction: row;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -724,6 +752,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-Barlow-Condensed {
   font-family: Barlow Condensed, regular;
 }
@@ -759,10 +791,6 @@ video {
 
 .leading-8 {
   line-height: 2rem;
-}
-
-.leading-extra-height {
-  line-height: 7.188rem;
 }
 
 .tracking-widest {
@@ -812,7 +840,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Barlow Condensed', sans-serif;
   height: 6rem;
   top: 2.5rem;
 }
@@ -839,6 +866,8 @@ body {
   color: hwb(0 100% 0%);
   text-transform: uppercase;
   letter-spacing: 0.169rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 2.125rem;
   left: 7.6rem;
 }
 
@@ -857,6 +886,13 @@ tracking-wide font-Barlow leading-8 */
   font-family: 'Barlow', sans-serif;
   letter-spacing: 0.025rem;
   line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.seperation {
+  background-color: hsl(231, 15%, 26%);
+  width: 100%;
+  height: 1px;
 }
 
 /* Hover effects */
