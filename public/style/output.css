@@ -587,6 +587,18 @@ video {
   left: 7.6rem;
 }
 
+.top-52 {
+  top: 13rem;
+}
+
+.left-40 {
+  left: 10rem;
+}
+
+.top-19 {
+  top: 19rem;
+}
+
 .top-60 {
   top: 15rem;
 }
@@ -601,6 +613,14 @@ video {
 
 .mr-0 {
   margin-right: 0px;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .flex {
@@ -631,6 +651,10 @@ video {
   width: 51.875rem;
 }
 
+.w-102 {
+  width: 27.8rem;
+}
+
 .w-68 {
   width: 17rem;
 }
@@ -653,6 +677,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .rounded-full {
@@ -704,21 +732,16 @@ video {
   font-family: Bellefair, sans sarif;
 }
 
-.font-Barlow {
-  font-family: Barlow, regular;
-}
-
 .text-2\.5xl {
   font-size: 1.75rem;
 }
 
-.text-10xl {
-  font-size: 9.3rem;
+.text-8\.5xl {
+  font-size: 6.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-10xl {
+  font-size: 9.3rem;
 }
 
 .text-3xl {
@@ -730,16 +753,16 @@ video {
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-extra-height {
+  line-height: 7.188rem;
 }
 
 .tracking-widest {
@@ -750,8 +773,8 @@ video {
   letter-spacing: 0.297rem;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
+.tracking-nav-text {
+  letter-spacing: 0.169rem;
 }
 
 .text-white {
@@ -807,9 +830,33 @@ body {
   right: 0;
 }
 
+/* absolute flex flex-row text-white uppercase
+      tracking-nav-text left-30 */
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  color: hwb(0 100% 0%);
+  text-transform: uppercase;
+  letter-spacing: 0.169rem;
+  left: 7.6rem;
+}
+
 .numbers {
   font-weight: bold;
   margin-right: 0.688rem;
+}
+
+/* text-custom-blue text-lg font-normal
+tracking-wide font-Barlow leading-8 */
+
+.about {
+  color: hsl(231, 77%, 90%);
+  font: normal;
+  font-size: 1.125rem;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 2rem;
 }
 
 /* Hover effects */

@@ -21,6 +21,7 @@ module.exports = {
       },
       fontSize: {
         '2.5xl': '1.75rem',
+        '8.5xl': '6.25rem',
         '10xl': '9.3rem'
       },
       colors: {
@@ -29,6 +30,7 @@ module.exports = {
       },
       width: {
         '68': '17rem',
+        '102': '27.8rem',
         '108': '28.125rem',
         'nav': '51.875rem'
       },
@@ -38,7 +40,11 @@ module.exports = {
         '86': '23rem',
       },
       letterSpacing: {
+        'nav-text': '0.169rem',
         'custom-widest': '0.297rem'
+      },
+      lineHeight: {
+        'extra-height': '7.188rem',
       },
       inset: {
         '10.5': '167px',
@@ -46,6 +52,7 @@ module.exports = {
         '22': '5.5rem',
         '30': '7.6rem',
         '38': '9.5rem',
+        '19': '19rem',
         '86': '23rem',
         '87': '24rem',
         'nav': '38rem',

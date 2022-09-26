@@ -30,10 +30,30 @@ body {
     height: 6rem;
     right: 0;
 }
+/* absolute flex flex-row text-white uppercase
+      tracking-nav-text left-30 */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    color: hwb(0 100% 0%);
+    text-transform: uppercase;
+    letter-spacing: 0.169rem;
+    left: 7.6rem;
+}
 
 .numbers {
     font-weight: bold;
     margin-right: 0.688rem;
+}
+/* text-custom-blue text-lg font-normal
+tracking-wide font-Barlow leading-8 */
+.about {
+    color: hsl(231, 77%, 90%);
+    font: normal;
+    font-size: 1.125rem;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.025rem;
+    line-height: 2rem;
 }
 
 /* Hover effects */
