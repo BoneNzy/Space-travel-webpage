@@ -66,6 +66,28 @@ tracking-wide font-Barlow leading-8 */
     height: 1px;
 }
 
+.travel-info {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+
+    letter-spacing: 2.3625px;
+    color: #D0D6F9;
+}
+
+.distance {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+}
+
 /* Hover effects */
 
 .hover-explore:hover::before {

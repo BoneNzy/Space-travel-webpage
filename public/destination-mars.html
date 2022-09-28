@@ -5,33 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/output.css">
 </head>
-<body>
+<body class="bg-background-destination">
+  <header class="header">
+    <!-- Logo -->
+    <div class="absolute flex bg-no-repeat justify-center left-13.5">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <!-- Horizontal Bar -->
+    <div class="absolute bg-white w-108 h-0.5 opacity-25
+    mix-blend-normal left-10.5 top-12">
+    </div>
 
-  01 Pick your destination
+    <nav class="nav-container backdrop-blur-2xl">
+      <ul  class="absolute nav-list">
+        <li class="mr-12">
+          <span class="numbers">00</span>
+            <a href="./index.html">Home</a>
+        </li>
+        <li class="mr-12">
+          <span class="numbers">01</span>
+          <a href="./destination-moon.html">Destination</a>
+        </li>
+        <li class="mr-12">
+          <span class="numbers">02</span>
+          <a href="./crew-commander.html">Crew</a>
+        </li>
+        <li class="">
+          <span class="numbers">03</span>
+          <a href="./technology-vehicle.html">Technology</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+  <!-- The Main Section -->
+  <div class="absolute text-white top-52 left-40
+  font-Barlow-Condensed tracking-custom-widest leading-8">
+    <p class="uppercase  text-2.5xl">
+      <span class="font-bold opacity-25 mix-blend-normal mr-7">02</span>
+      Pick your destination
+    </p>
+  </div>
 
-  Mars
+  <section class="relative flex justify-evenly items-end top-52">
+    <div class="">
+      <img src="./assets/destination/image-mars.png" alt="Mars">
+    </div>
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+    <!-- details and explore -->
+    <aside class="w-102">
+      <ul  class="nav-list">
+        <li class="mr-6">
+            <a href="./destination-moon.html">Moon</a>
+        </li>
+        <li class="mr-6">
+          <a href="./destination-mars.html">Mars</a>
+        </li>
+        <li class="mr-6">
+          <a href="./destination-europa.html">Europa</a>
+        </li>
+        <li class="">
+          <a href="./destination-titan.html">Titan</a>
+        </li>
+      </ul>
 
-  Avg. distance
-  225 mil. km
+      <h1 class="font-Bellefair text-white uppercase text-8.5xl">Mars</h1>
+      <section class="about">
+        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+        the tallest planetary mountain in our solar system. It’s two and a half times
+        the size of Everest!
+      </section>
 
-  Est. travel time
-  9 months
+      <!-- Seperation -->
+      <div class="seperation"></div>
+
+      <!-- Distance -->
+      <section class="grid grid-cols-2 text-white uppercase mt-7">
+        <div>
+          <h4 class="travel-info">Avg. distance</h4>
+          <h2 class="distance">225 mil. km</h2>
+        </div>
+
+        <div>
+          <h4 class="travel-info">Est. travel time</h4>
+          <h2 class="distance">9 months</h2>
+        </div>
+      </section>
+    </aside>
+
+  </section>
 </body>
 </html>
