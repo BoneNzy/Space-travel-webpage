@@ -2,6 +2,74 @@
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Live](space-travel-web.netlify.app)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind css
+- Flexbox
+- CSS Grid
+
+### What I learned
+
+I learned how to use tailwind packages, responsive design using tailwind.
+
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Website - [Space Travel](space-travel-web.netlify.app)
+- Frontend Mentor - [Geremsa](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [Geremsa](https://www.twitter.com/geremsanrzr)
+
+<!-- # Frontend Mentor - Space tourism website
+
+![Design preview for the Space tourism website coding challenge](./preview.jpg)
+
 ## Welcome! 👋
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. Our challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
@@ -73,7 +141,7 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
@@ -87,4 +155,4 @@ The more specific you are with your questions the more likely it is that another
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
-# space-travel-webpage
+# space-travel-webpage -->
