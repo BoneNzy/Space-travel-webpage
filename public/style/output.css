@@ -611,6 +611,10 @@ video {
   top: 25rem;
 }
 
+.top-96 {
+  top: 24rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -621,6 +625,14 @@ video {
 
 .top-60 {
   top: 15rem;
+}
+
+.left-80 {
+  left: 20rem;
+}
+
+.top-68 {
+  top: 17rem;
 }
 
 .mr-12 {
@@ -713,6 +725,10 @@ video {
 
 .w-68 {
   width: 17rem;
+}
+
+.w-110 {
+  width: 29.375rem;
 }
 
 .grid-cols-2 {
@@ -958,6 +974,15 @@ tracking-wide font-Barlow leading-8 */
   text-transform: uppercase;
 }
 
+.terminology {
+  font-family: 'Barlow Condensed';
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  letter-spacing: 2.7px;
+  line-height: 19px;
+}
+
 /***** Dot Button *****/
 
 .dot-button> * {
@@ -965,9 +990,24 @@ tracking-wide font-Barlow leading-8 */
   border: 0;
   border-radius: 50%;
   padding: .5rem;
-  margin-top: 7rem;
   background-color: white;
   opacity: 0.30;
+}
+
+/***** Tech navigation *****/
+
+.tech-nav> * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 32px;
 }
 
 /******** Hover effects ********/

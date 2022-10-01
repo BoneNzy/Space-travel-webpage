@@ -35,6 +35,7 @@ module.exports = {
         '102': '27.8rem',
         '108': '28.125rem',
         '109': '29rem',
+        '110': '29.375rem',
         '112': '31rem',
         '120': '38.375rem',
         'nav': '51.875rem'
@@ -60,11 +61,13 @@ module.exports = {
         '30': '7.6rem',
         '34': '8.5rem',
         '38': '9.5rem',
+        '68': '17rem',
         '76': '19rem',
         '86': '23rem',
         '98': '25rem',
-        'nav': '38rem',
         'tExplore': '31rem',
+        'nav': '38rem',
+        '121': '49.3rem',
         'lExplore': '62.5rem',
       },
       opacity: {
