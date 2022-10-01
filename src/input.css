@@ -20,13 +20,8 @@ body {
 /* absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
     w-nav h-24 right-0 */
 .nav-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
     background-color: rgba(255, 255, 255, 0.04);
-
-    width: 51.875rem;
-    height: 6rem;
+    width: 56rem;
     right: 0;
 }
 /* absolute flex flex-row text-white uppercase
@@ -34,19 +29,26 @@ body {
 .nav-list {
     display: flex;
     flex-direction: row;
-    color: hwb(0 100% 0%);
+    align-items: center;
+    color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     letter-spacing: 0.169rem;
     font-family: 'Barlow Condensed', sans-serif;
+}
 
-    height: 2.125rem;
-    left: 7.6rem;
+.nav-list> * {
+    padding-block: 2.3rem;
+}
+
+.underline-nav> * {
+    border-bottom: 3px solid #FFFFFF;
 }
 
 .numbers {
     font-weight: bold;
     margin-right: 0.688rem;
 }
+
 /* text-custom-blue text-lg font-normal
 tracking-wide font-Barlow leading-8 */
 .about {

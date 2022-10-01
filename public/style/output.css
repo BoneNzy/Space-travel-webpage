@@ -591,14 +591,6 @@ video {
   left: 2.5rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.left-30 {
-  left: 7.6rem;
-}
-
 .top-52 {
   top: 13rem;
 }
@@ -635,16 +627,16 @@ video {
   top: 17rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.ml-30 {
+  margin-left: 7.688rem;
+}
+
 .mr-12 {
   margin-right: 3rem;
-}
-
-.mr-0\.6 {
-  margin-right: 0.688rem;
-}
-
-.mr-0 {
-  margin-right: 0px;
 }
 
 .mr-7 {
@@ -703,10 +695,6 @@ video {
   width: 28.125rem;
 }
 
-.w-nav {
-  width: 51.875rem;
-}
-
 .w-112 {
   width: 31rem;
 }
@@ -733,10 +721,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .items-end {
@@ -772,10 +756,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-white-400 {
-  background-color: rgba(255, 255, 255, 0.04);
-}
-
 .bg-background-crew {
   background-image: url('../assets/crew/background-crew-desktop.jpg');
 }
@@ -790,14 +770,6 @@ video {
 
 .bg-background-tech {
   background-image: url('../assets/technology/background-technology-desktop.jpg');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
 }
 
 .bg-no-repeat {
@@ -849,12 +821,12 @@ video {
   line-height: 1;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
 .tracking-custom-widest {
   letter-spacing: 0.297rem;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-white {
@@ -900,12 +872,8 @@ body {
     w-nav h-24 right-0 */
 
 .nav-container {
-  position: absolute;
-  display: flex;
-  align-items: center;
   background-color: rgba(255, 255, 255, 0.04);
-  width: 51.875rem;
-  height: 6rem;
+  width: 56rem;
   right: 0;
 }
 
@@ -915,12 +883,19 @@ body {
 .nav-list {
   display: flex;
   flex-direction: row;
-  color: hwb(0 100% 0%);
+  align-items: center;
+  color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   letter-spacing: 0.169rem;
   font-family: 'Barlow Condensed', sans-serif;
-  height: 2.125rem;
-  left: 7.6rem;
+}
+
+.nav-list> * {
+  padding-block: 2.3rem;
+}
+
+.underline-nav> * {
+  border-bottom: 3px solid #FFFFFF;
 }
 
 .numbers {
