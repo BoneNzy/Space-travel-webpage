@@ -5,23 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/output.css">
 </head>
-<body>
+<body class="bg-fixed bg-cover bg-no-repeat bg-background-crew">
+  <header class="relative flex justify-between items-center font-Barlow-Condensed h-24 top-10">
+    <!-- Logo -->
+    <div class="absolute flex bg-no-repeat justify-center left-13.5">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <!-- Horizontal Bar -->
+    <div class="absolute bg-white w-108 h-0.5 opacity-25
+    mix-blend-normal left-10.5 top-12">
+    </div>
 
-  02 Meet your crew
+    <nav class="absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
+    w-nav h-24 right-0">
+      <ul  class="absolute flex flex-row text-white uppercase tracking-widest left-30">
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">00</span>
+            <a href="./index.html">Home</a>
+        </li>
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">01</span>
+          <a href="./destination-moon.html">Destination</a>
+        </li>
+        <li class="mr-12">
+          <span class="font-bold mr-0.6">02</span>
+          <a href="./crew-commander.html">Crew</a>
+        </li>
+        <li class="">
+          <span class="font-bold mr-0.6">03</span>
+          <a href="./technology-vehicle.html">Technology</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  Mission Specialist
-  Mark Shuttleworth
+  <!-- The Main Section -->
+  <div class="absolute text-white top-52 left-40
+  font-Barlow-Condensed tracking-custom-widest leading-8">
+    <p class="uppercase  text-2.5xl">
+      <span class="font-bold opacity-25 mix-blend-normal mr-7">02</span>
+      Meet your crew
+    </p>
+  </div>
 
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
+  <article class="absolute w-120 top-98 left-40">
+    <h3 class="role">Mission Specialist</h3>
+    <h2 class="font-Bellefair text-white uppercase text-5.5xl leading-none mt-4 mb-6.5">Mark Shuttleworth</h2>
+      <section class="about w-109">
+        Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+        the Linux-based Ubuntu operating system. Shuttleworth became the first South
+        African to travel to space as a space tourist.
+      </section>
+      <!-- Path Buttons -->
+    <div class="dot-button flex">
+        <a class="mr-6" href="./crew-commander.html">
+          <span class="sr-only">The Commander</span>
+        </a>
+        <a class="mr-6" href="./crew-specialist.html">
+          <span class="sr-only">The Specialist</span>
+        </a>
+        <a class="mr-6" href="./crew-pilot.html">
+          <span class="sr-only">The Pilot</span>
+        </a>
+        <a class="" href="./crew-engineer.html">
+          <span class="sr-only">The Enginner</span>
+        </a>
+    </div>
+  </article>
+
+<!-- The Image -->
+  <aside class="absolute bottom-0 right-34">
+    <img src="./assets/crew/image-mark-shuttleworth.png" alt="Mission Specialist">
+  </aside>
 </body>
 </html>

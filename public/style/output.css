@@ -551,6 +551,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -595,24 +607,20 @@ video {
   left: 10rem;
 }
 
-.top-60 {
-  top: 15rem;
+.top-98 {
+  top: 25rem;
 }
 
 .bottom-0 {
   bottom: 0px;
 }
 
-.left-34 {
-  left: 8.5rem;
-}
-
 .right-34 {
   right: 8.5rem;
 }
 
-.bottom-2 {
-  bottom: 0.5rem;
+.top-60 {
+  top: 15rem;
 }
 
 .mr-12 {
@@ -631,8 +639,24 @@ video {
   margin-right: 1.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-6\.5 {
+  margin-bottom: 1.688rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mt-7 {
@@ -671,8 +695,20 @@ video {
   width: 51.875rem;
 }
 
+.w-112 {
+  width: 31rem;
+}
+
 .w-102 {
   width: 27.8rem;
+}
+
+.w-120 {
+  width: 38.375rem;
+}
+
+.w-109 {
+  width: 29rem;
 }
 
 .w-68 {
@@ -764,6 +800,10 @@ video {
   font-size: 1.75rem;
 }
 
+.text-5\.5xl {
+  font-size: 3.5rem;
+}
+
 .text-8\.5xl {
   font-size: 6.25rem;
 }
@@ -787,6 +827,10 @@ video {
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .tracking-widest {
@@ -878,7 +922,6 @@ tracking-wide font-Barlow leading-8 */
   font-family: 'Barlow', sans-serif;
   letter-spacing: 0.025rem;
   line-height: 2rem;
-  margin-bottom: 3rem;
 }
 
 .seperation {
@@ -907,6 +950,26 @@ tracking-wide font-Barlow leading-8 */
   color: #FFFFFF;
 }
 
+.role {
+  font-family: 'Bellefair';
+  font-size: 32px;
+  color: white;
+  opacity: .5;
+  text-transform: uppercase;
+}
+
+/***** Dot Button *****/
+
+.dot-button> * {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  padding: .5rem;
+  margin-top: 7rem;
+  background-color: white;
+  opacity: 0.30;
+}
+
 /******** Hover effects ********/
 
 .hover-explore:hover::before {
@@ -919,4 +982,19 @@ tracking-wide font-Barlow leading-8 */
   height: 450px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+/***** Screen Readers *****/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
 }

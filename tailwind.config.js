@@ -17,10 +17,12 @@ module.exports = {
       },
       margin: {
         '0.6': '0.688rem',
+        '6.5': '1.688rem',
         '12.5': '3.188rem',
       },
       fontSize: {
         '2.5xl': '1.75rem',
+        '5.5xl': '3.5rem',
         '8.5xl': '6.25rem',
         '10xl': '9.3rem'
       },
@@ -32,6 +34,9 @@ module.exports = {
         '68': '17rem',
         '102': '27.8rem',
         '108': '28.125rem',
+        '109': '29rem',
+        '112': '31rem',
+        '120': '38.375rem',
         'nav': '51.875rem'
       },
       height: {
@@ -45,6 +50,7 @@ module.exports = {
         'custom-widest': '0.297rem'
       },
       lineHeight: {
+        '18': '5rem',
         'extra-height': '7.188rem',
       },
       inset: {
@@ -56,7 +62,7 @@ module.exports = {
         '38': '9.5rem',
         '76': '19rem',
         '86': '23rem',
-        '87': '24rem',
+        '98': '25rem',
         'nav': '38rem',
         'tExplore': '31rem',
         'lExplore': '62.5rem',
