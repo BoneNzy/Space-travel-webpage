@@ -74,6 +74,9 @@ module.exports = {
       opacity: {
         '4': '0.04',
       },
+      transitionDuration: {
+        '3000': '3000ms',
+      },
     },
   },
   plugins: [],

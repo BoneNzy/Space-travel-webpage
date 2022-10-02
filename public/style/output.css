@@ -884,18 +884,34 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   letter-spacing: 0.169rem;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
 .nav-list> * {
+  color: hsl(0, 0%, 100%);
   padding-block: 2.3rem;
 }
 
+.destination-nav> * {
+  color: #D0D6F9;
+  padding-block: 1rem;
+}
+
 .underline-nav> * {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid hsla(0, 0%, 100%, 0);
+}
+
+.underline-nav> *:hover,
+.underline-nav> *:focus {
+  border-color: hsl(0, 0%, 100%, .5);
+  transition: 0.4s;
+}
+
+.underline-nav> .active {
+  color: #FFFFFF;
+  border-color: hsl(0, 0%, 100%);
 }
 
 .numbers {
@@ -969,6 +985,14 @@ tracking-wide font-Barlow leading-8 */
   opacity: 0.30;
 }
 
+.dot-button> *:hover {
+  opacity: .6;
+}
+
+.dot-button> *.active {
+  opacity: 1;
+}
+
 /***** Tech navigation *****/
 
 .tech-nav> * {
@@ -978,11 +1002,22 @@ tracking-wide font-Barlow leading-8 */
   justify-content: center;
   width: 80px;
   height: 80px;
+  color: #FFFFFF;
   border-radius: 50%;
   border: 1px solid hsla(0, 0%, 100%, 0.3);
   font-family: 'Bellefair';
   font-weight: 400;
   font-size: 32px;
+}
+
+.tech-nav> *:hover {
+  border: 1px solid hsl(0, 0%, 100%);
+  transition: 1s;
+}
+
+.tech-nav> *.active {
+  color: black;
+  background-color: #FFFFFF;
 }
 
 /******** Hover effects ********/
@@ -997,6 +1032,7 @@ tracking-wide font-Barlow leading-8 */
   height: 450px;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 /***** Screen Readers *****/
