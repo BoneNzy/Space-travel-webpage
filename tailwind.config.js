@@ -10,7 +10,9 @@ module.exports = {
         'Bellefair': ['Bellefair', 'sans sarif']
       },
       backgroundImage: {
-        'background-home': "url('../assets/home/background-home-desktop.jpg')",
+        'background-home-desktop': "url('../assets/home/background-home-desktop.jpg')",
+        'background-home-tablet': "url('../assets/home/background-home-tablet.jpg')",
+        'background-home-mobile': "url('../assets/home/background-home-mobile.jpg')",
         'background-destination': "url('../assets/destination/background-destination-desktop.jpg')",
         'background-crew': "url('../assets/crew/background-crew-desktop.jpg')",
         'background-tech': "url('../assets/technology/background-technology-desktop.jpg')",
@@ -22,8 +24,10 @@ module.exports = {
         '30': '7.688rem',
       },
       fontSize: {
+        '.5xl': '1rem',
         '2.5xl': '1.75rem',
         '5.5xl': '3.5rem',
+        '7.5xl': '5rem',
         '8.5xl': '6.25rem',
         '10xl': '9.3rem'
       },
@@ -62,14 +66,18 @@ module.exports = {
         '30': '7.6rem',
         '34': '8.5rem',
         '38': '9.5rem',
+        '50': '12.6rem',
         '68': '17rem',
         '76': '19rem',
         '86': '23rem',
         '98': '25rem',
-        'tExplore': '31rem',
+        '102': '29rem',
+        'mExplore': '35rem',
+        'dExplore': '41rem',
         'nav': '38rem',
+        '116': '43rem',
         '121': '49.3rem',
-        'lExplore': '62.5rem',
+        'lExplore': '59rem',
       },
       opacity: {
         '4': '0.04',

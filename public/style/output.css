@@ -615,8 +615,28 @@ video {
   right: 8.5rem;
 }
 
-.top-60 {
-  top: 15rem;
+.top-2 {
+  top: 0.5rem;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-mExplore {
+  top: 35rem;
 }
 
 .left-80 {
@@ -625,10 +645,6 @@ video {
 
 .top-68 {
   top: 17rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .ml-30 {
@@ -667,6 +683,14 @@ video {
   margin-top: 1.75rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -687,8 +711,8 @@ video {
   height: 0px;
 }
 
-.h-68 {
-  height: 17rem;
+.h-40 {
+  height: 10rem;
 }
 
 .w-108 {
@@ -711,12 +735,16 @@ video {
   width: 29rem;
 }
 
-.w-68 {
-  width: 17rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-110 {
   width: 29.375rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .grid-cols-2 {
@@ -737,10 +765,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -764,8 +788,8 @@ video {
   background-image: url('../assets/destination/background-destination-desktop.jpg');
 }
 
-.bg-background-home {
-  background-image: url('../assets/home/background-home-desktop.jpg');
+.bg-background-home-mobile {
+  background-image: url('../assets/home/background-home-mobile.jpg');
 }
 
 .bg-background-tech {
@@ -774,6 +798,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-Barlow-Condensed {
@@ -796,13 +824,13 @@ video {
   font-size: 6.25rem;
 }
 
-.text-10xl {
-  font-size: 9.3rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-7\.5xl {
+  font-size: 5rem;
 }
 
 .font-bold {
@@ -843,6 +871,10 @@ video {
   opacity: 0.25;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .mix-blend-normal {
   mix-blend-mode: normal;
 }
@@ -865,33 +897,48 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 6rem;
-  top: 2.5rem;
+  /* top: 2.5rem; */
 }
 
-/* absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
-    w-nav h-24 right-0 */
+/* .nav-container {
+    background-color: rgba(255, 255, 255, 0.04);
+    width: 56rem;
+    right: 0;
+} */
 
 .nav-container {
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.04);
-  width: 56rem;
-  right: 0;
+  color: #FFFFFF;
+  inset: 0 0 0 30%;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: 300ms ease-out;
+}
+
+.nav-container[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 /* absolute flex flex-row text-white uppercase
       tracking-nav-text left-30 */
 
 .nav-list {
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.169rem;
   font-family: 'Barlow Condensed', sans-serif;
+  padding: min(20vh, 10rem) 2rem;
 }
 
 .nav-list> * {
   color: hsl(0, 0%, 100%);
-  padding-block: 2.3rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
 }
 
 .destination-nav> * {
@@ -914,6 +961,19 @@ body {
   border-color: hsl(0, 0%, 100%);
 }
 
+/*  absolute bg-white w-108 h-0.5 opacity-25
+    mix-blend-normal left-10.5 top-12 */
+
+.hr-bar {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 450px;
+  height: 1px;
+  top: 48px;
+  left: 167px;
+  mix-blend-mode: normal;
+}
+
 .numbers {
   font-weight: bold;
   margin-right: 0.688rem;
@@ -925,7 +985,7 @@ tracking-wide font-Barlow leading-8 */
 .about {
   color: hsl(231, 77%, 90%);
   font: normal;
-  font-size: 1.125rem;
+  font-size: 15px;
   font-family: 'Barlow', sans-serif;
   letter-spacing: 0.025rem;
   line-height: 2rem;
@@ -1032,7 +1092,6 @@ tracking-wide font-Barlow leading-8 */
   height: 450px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.4s;
 }
 
 /***** Screen Readers *****/
@@ -1046,6 +1105,174 @@ tracking-wide font-Barlow leading-8 */
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  /* added line */
   border: 0;
+}
+
+.menu-icon {
+  position: absolute;
+  background-color: transparent;
+  background-image: url('../assets/shared/icon-hamburger.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 1.5rem;
+  top: 33px;
+  z-index: 9999;
+}
+
+.menu-icon[aria-expanded="true"] {
+  background-image: url('../assets/shared/icon-close.svg');
+}
+
+/* ----------------Responsive------------------ */
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .numbers {
+    display: none;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 48rem) {
+  .menu-icon {
+    display: none;
+  }
+
+  /* absolute nav-container flex items-center bg-white-400 backdrop-blur-2xl
+    w-nav h-24 right-0 */
+
+  .nav-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* right: 0; */
+    transform: translateX(0%);
+  }
+
+  .nav-list {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .nav-list> * {
+    padding-block: 2.2rem;
+    margin: 0;
+  }
+
+  .explore {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+/* desktop */
+
+@media (min-width:64rem) {
+  .article {
+    margin-inline: 0;
+  }
+
+  .explore {
+    margin: 0;
+    left: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:top-50 {
+    top: 12.6rem;
+  }
+
+  .md\:top-116 {
+    top: 43rem;
+  }
+
+  .md\:mr-9 {
+    margin-right: 2.25rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .md\:bg-background-home-tablet {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-10xl {
+    font-size: 9.3rem;
+  }
+
+  .md\:text-\.5xl {
+    font-size: 1rem;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:top-10 {
+    top: 2.5rem;
+  }
+
+  .lg\:left-13\.5 {
+    left: 55px;
+  }
+
+  .lg\:top-96 {
+    top: 24rem;
+  }
+
+  .lg\:left-40 {
+    left: 10rem;
+  }
+
+  .lg\:top-98 {
+    top: 25rem;
+  }
+
+  .lg\:h-68 {
+    height: 17rem;
+  }
+
+  .lg\:w-68 {
+    width: 17rem;
+  }
+
+  .lg\:bg-background-home-desktop {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+  }
+
+  .lg\:text-start {
+    text-align: start;
+  }
+
+  .lg\:text-2\.5xl {
+    font-size: 1.75rem;
+  }
+
+  .lg\:opacity-25 {
+    opacity: 0.25;
+  }
 }

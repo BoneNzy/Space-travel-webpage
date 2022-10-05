@@ -15,37 +15,40 @@
   <link rel="stylesheet" href="./style/output.css">
 </head>
 <body class="bg-background-destination">
-  <header class="header">
+  <header class="header top-2 md:top-0 lg:top-10">
     <!-- Logo -->
-    <div class="absolute flex bg-no-repeat justify-center left-13.5">
+    <div class="absolute flex bg-no-repeat justify-center left-6 lg:left-13.5"> <!--desktop left-13.5 -->
       <img src="./assets/shared/logo.svg" alt="logo">
     </div>
 
     <!-- Horizontal Bar -->
-    <div class="absolute bg-white w-108 h-0.5 opacity-25
-    mix-blend-normal left-10.5 top-12">
-    </div>
+    <!-- <div class="hr-bar">
+    </div> -->
 
-    <nav class="absolute nav-container backdrop-blur-2xl">
-      <ul  class="underline-nav nav-list ml-30">
-        <li class="mr-12">
+    <nav id="nav-container" class="nav-container backdrop-blur-2xl" data-visible="false"><!-- absolute nav-container -->
+      <ul class="underline-nav nav-list right-0"><!-- ml-30-->
+        <li class="active md:mr-9"> <!-- mr-12 -->
           <span class="numbers">00</span>
             <a href="./index.html">Home</a>
         </li>
-        <li class="mr-12 active">
-          <span class="numbers">01</span>
+        <li class=" md:mr-9">
+          <span class="numbers" aria-hidden="true">01</span>
           <a href="./destination-moon.html">Destination</a>
         </li>
-        <li class="mr-12">
-          <span class="numbers">02</span>
+        <li class=" md:mr-9">
+          <span class="numbers aria-hidden="true"">02</span>
           <a href="./crew-commander.html">Crew</a>
         </li>
-        <li class="">
-          <span class="numbers">03</span>
+        <li class="md:mr-12">
+          <span class="numbers aria-hidden="true"">03</span>
           <a href="./technology-vehicle.html">Technology</a>
         </li>
       </ul>
     </nav>
+
+    <button class="menu-icon" aria-controls="nav-container" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
   </header>
 
   <!-- The Main Section -->
