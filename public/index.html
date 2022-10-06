@@ -21,11 +21,11 @@
     </div>
 
     <!-- Horizontal Bar -->
-    <div class="hr-bar opacity-0 md:opacity-0 lg:opacity-25">
+    <div class="hr-bar hidden md:hidden lg:contents">
     </div>
 
-    <nav id="nav-container" class="nav-container backdrop-blur-2xl" data-visible="false"><!-- absolute nav-container -->
-      <ul class="underline-nav nav-list right-0"><!-- ml-30-->
+    <nav id="nav-container" class="fixed nav-container backdrop-blur-2xl" data-visible="false"><!-- absolute nav-container -->
+      <ul class="underline-nav nav-list md:right-0"><!-- ml-30-->
         <li class="active md:mr-9"> <!-- mr-12 -->
           <span class="numbers">00</span>
             <a href="./index.html">Home</a>
@@ -51,7 +51,7 @@
   </header>
 
     <!-- Articles -->
-    <article class="article absolute max-w-sm top-28 left-0 right-0 ml-auto mr-auto text-center
+    <article class="article absolute max-w-article top-30 left-0 right-0 ml-auto mr-auto text-center
     md:max-w-md md:top-50 lg:top-96 lg:text-start lg:left-40">
       <h5 class="text-custom-blue font-Barlow-Condensed uppercase text-xl tracking-custom-widest
       md:text-xl lg:text-2.5xl">
@@ -70,8 +70,8 @@
     </article>
 
   <!-- The Explore -->
-  <aside class="explore absolute flex hover-explore justify-center items-center w-40 h-40 bg-white rounded-full
-  left-0 right-0 ml-auto mr-auto top-mExplore md:top-116 lg:w-68 lg:h-68 lg:top-98">
+  <aside class="explore relative flex hover-explore justify-center items-center w-40 h-40 top-103 bg-white rounded-full
+  left-0 right-0 ml-auto mr-auto lg:w-68 lg:h-68">
 
     <p class="text-xl uppercase font-Bellefair tracking-widest">
       Explore

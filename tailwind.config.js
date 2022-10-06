@@ -35,6 +35,9 @@ module.exports = {
         'white-400': 'rgba(255, 255, 255, 0.04)',
         'custom-blue': '#d0d6f9',
       },
+      maxWidth: {
+        'article': '22rem',
+      },
       width: {
         '68': '17rem',
         '102': '27.8rem',
@@ -72,6 +75,7 @@ module.exports = {
         '86': '23rem',
         '98': '25rem',
         '102': '29rem',
+        '103': '29.3rem',
         'mExplore': '35rem',
         'dExplore': '41rem',
         'nav': '38rem',
