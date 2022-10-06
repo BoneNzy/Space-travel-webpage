@@ -13,74 +13,79 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style/output.css">
+  <script src="./style/script.js" defer></script>
 </head>
-<body class="bg-background-destination">
-  <header class="header">
-    <!-- Logo -->
-    <div class="absolute flex bg-no-repeat justify-center left-13.5">
-      <img src="./assets/shared/logo.svg" alt="logo">
-    </div>
+<body class="bg-background-dest-mobile md:bg-background-dest-tab lg:bg-background-dest-desk">
+    <header class="header top-2 md:top-0 lg:top-10">
+      <!-- Logo -->
+      <div class="absolute flex bg-no-repeat justify-center left-6 lg:left-13.5"> <!--desktop left-13.5 -->
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </div>
 
-    <!-- Horizontal Bar -->
-    <div class="absolute bg-white w-108 h-0.5 opacity-25
-    mix-blend-normal left-10.5 top-12">
-    </div>
+      <!-- Horizontal Bar -->
+      <div class="hr-bar">
+      </div>
 
-    <nav class="absolute nav-container backdrop-blur-2xl">
-      <ul  class="underline-nav nav-list ml-30">
-        <li class="mr-12">
-          <span class="numbers">00</span>
-            <a href="./index.html">Home</a>
-        </li>
-        <li class="mr-12 active">
-          <span class="numbers">01</span>
-          <a href="./destination-moon.html">Destination</a>
-        </li>
-        <li class="mr-12">
-          <span class="numbers">02</span>
-          <a href="./crew-commander.html">Crew</a>
-        </li>
-        <li class="">
-          <span class="numbers">03</span>
-          <a href="./technology-vehicle.html">Technology</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav id="nav-container" class="fixed nav-container backdrop-blur-2xl" data-visible="false"><!-- absolute nav-container -->
+        <ul class="underline-nav nav-list md:right-0"><!-- ml-30-->
+          <li class="md:mr-9"> <!-- mr-12 -->
+            <span class="numbers">00</span>
+              <a href="./index.html">Home</a>
+          </li>
+          <li class="active md:mr-9">
+            <span class="numbers" aria-hidden="true">01</span>
+            <a href="./destination-moon.html">Destination</a>
+          </li>
+          <li class=" md:mr-9">
+            <span class="numbers aria-hidden="true"">02</span>
+            <a href="./crew-commander.html">Crew</a>
+          </li>
+          <li class="md:mr-11 lg:mr-28">
+            <span class="numbers aria-hidden="true"">03</span>
+            <a href="./technology-vehicle.html">Technology</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-icon" aria-controls="nav-container" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+    </header>
 
   <!-- The Main Section -->
-  <div class="absolute text-white top-52 left-40
-  font-Barlow-Condensed tracking-custom-widest leading-8">
-    <p class="uppercase  text-2.5xl">
-      <span class="font-bold opacity-25 mix-blend-normal mr-7">01</span>
+    <p class="destination-heading absolute w-60 text-white top-22 left-0 right-0 ml-auto mr-auto tracking-nav-text font-Barlow-Condensed uppercase text-.5xl text-center
+    md:top-34 md:left-10 md:w-72 md:m-0 md:text-xl lg:top-54 lg:left-40 lg:w-96 lg:text-2.5xl lg:tracking-custom-widest">
+      <span class="font-bold opacity-25 mix-blend-normal mr-4"> 01</span>
       Pick your destination
     </p>
-  </div>
 
-  <section class="relative flex justify-evenly items-end top-52">
-    <div class="">
+  <!-- <section class="relative flex justify-evenly items-end top-52"> -->
+    <div class="destination-image absolute left-0 right-0 ml-auto mr-auto w-42 top-36
+    md:top-54 md:w-75 lg:top-83 lg:m-0 lg:w-102">
       <img src="./assets/destination/image-mars.png" alt="Mars">
     </div>
 
     <!-- details and explore -->
-    <aside class="w-102">
-      <ul  class="nav-list destination-nav underline-nav">
-        <li class="mr-6">
-            <a href="./destination-moon.html">Moon</a>
-        </li>
-        <li class="mr-6 active">
-          <a href="./destination-mars.html">Mars</a>
-        </li>
-        <li class="mr-6">
-          <a href="./destination-europa.html">Europa</a>
-        </li>
-        <li class="">
-          <a href="./destination-titan.html">Titan</a>
-        </li>
-      </ul>
+    <ul  class="flex absolute destination-nav left-0 right-0 ml-auto mr-auto top-82
+    md:top-110 lg:top-76 lg:w-72 lg:m-0">
+      <li class="mr-6 md:mr-9">
+        <a href="./destination-moon.html">Moon</a>
+      </li>
+      <li class="mr-6 active md:mr-9">
+        <a href="./destination-mars.html">Mars</a>
+      </li>
+      <li class="mr-6 md:mr-9">
+        <a href="./destination-europa.html">Europa</a>
+      </li>
+      <li class="">
+        <a href="./destination-titan.html">Titan</a>
+      </li>
+    </ul>
 
-      <h1 class="font-Bellefair text-white uppercase text-8.5xl">Mars</h1>
-      <section class="about mb-12">
+    <aside class="destination-article absolute max-w-article top-96 text-center left-0 right-0 ml-auto mr-auto
+    md:top-114 md:max-w-xl lg:m-0 lg:w-102 lg:text-left lg:top-96">
+      <h1 class="font-Bellefair text-white uppercase text-5.5xl md:text-7.5xl lg:text-8.5xl">Mars</h1>
+      <section class="about mb-8">
         Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
         the tallest planetary mountain in our solar system. It’s two and a half times
         the size of Everest!
@@ -90,19 +95,17 @@
       <div class="seperation"></div>
 
       <!-- Distance -->
-      <section class="grid grid-cols-2 text-white uppercase mt-7">
-        <div>
+      <section class="grid grid-cols-1 text-white uppercase lg:grid-cols-2">
+        <div class=" mt-8">
           <h4 class="travel-info">Avg. distance</h4>
           <h2 class="distance">225 mil. km</h2>
         </div>
 
-        <div>
+        <div class="mt-8">
           <h4 class="travel-info">Est. travel time</h4>
           <h2 class="distance">9 months</h2>
         </div>
       </section>
     </aside>
-
-  </section>
 </body>
 </html>
