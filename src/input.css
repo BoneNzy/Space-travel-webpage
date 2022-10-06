@@ -35,6 +35,7 @@ body {
 /* absolute flex flex-row text-white uppercase
       tracking-nav-text left-30 */
 .nav-list {
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -44,11 +45,13 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 
     padding: min(20vh, 10rem) 2rem;
+    padding-right: 0%;
 }
 
 .nav-list> * {
+    height: 2rem;
     color: hsl(0, 0%, 100%);
-    margin-block-end: 2rem;
+    margin-block: .5rem;
 }
 .destination-nav> * {
     color: #D0D6F9;
@@ -56,8 +59,9 @@ body {
 }
 
 .underline-nav> * {
-    border-bottom: 3px solid hsla(0, 0%, 100%, 0);
+    border-right: 3px solid hsla(0, 0%, 100%, 0);
 }
+
 .underline-nav> *:hover,
 .underline-nav> *:focus {
     border-color: hsl(0, 0%, 100%, .5);
@@ -69,23 +73,11 @@ body {
     border-color: hsl(0, 0%, 100%);
 }
 
-.hr-bar {
-    position: absolute;
-    background-color: #FFFFFF;
-    width: 450px;
-    height: 1px;
-    top: 48px;
-    left: 167px;
-    mix-blend-mode: normal;
-}
-
 .numbers {
     font-weight: bold;
     margin-right: 0.688rem;
 }
 
-/* text-custom-blue text-lg font-normal
-tracking-wide font-Barlow leading-8 */
 .about {
     color: hsl(231, 77%, 90%);
     font: normal;
@@ -241,16 +233,17 @@ tracking-wide font-Barlow leading-8 */
     }
     .nav-container {
         position: absolute;
-        /* display: flex; */
         align-items: center;
-        /* right: 0; */
+        inset: 0 0 0 40%;
         transform: translateX(0%);
     }
     .nav-list {
         flex-direction: row;
+        width: auto;
         padding: 0;
     }
     .nav-list> * {
+        height: auto;
         padding-block: 2.2rem;
         margin: 0;
     }
@@ -258,6 +251,10 @@ tracking-wide font-Barlow leading-8 */
         width: 15rem;
         height: 15rem;
         top: 36rem;
+    }
+    .underline-nav> * {
+        border-bottom: 3px solid hsla(0, 0%, 100%, 0);
+        border-right: none;
     }
 }
 /* desktop */
@@ -270,6 +267,16 @@ tracking-wide font-Barlow leading-8 */
         margin: 0;
         top: 25rem;
         left: 45rem;
+    }
+    .hr-bar {
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 450px;
+        height: 1px;
+        top: 48px;
+        left: 167px;
+        mix-blend-mode: normal;
+        opacity: .25;
     }
  }
  @media (min-width:82rem) {
