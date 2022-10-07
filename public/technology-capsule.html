@@ -13,54 +13,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style/output.css">
+    <script src="./style/script.js" defer></script>
   </head>
-  <body class="bg-background-tech">
-    <header class="relative flex justify-between items-center font-Barlow-Condensed h-24 top-10">
+  <body class="bg-background-tech-mobile md:bg-background-tech-tab lg:bg-background-tech-desk">
+    <header class="header top-2 md:top-0 lg:top-10">
       <!-- Logo -->
-      <div class="absolute flex bg-no-repeat justify-center left-13.5">
+      <div class="absolute flex bg-no-repeat justify-center left-6 lg:left-13.5"> <!--desktop left-13.5 -->
         <img src="./assets/shared/logo.svg" alt="logo">
       </div>
 
       <!-- Horizontal Bar -->
-      <div class="absolute bg-white w-108 h-0.5 opacity-25
-      mix-blend-normal left-10.5 top-12">
+      <div class="hr-bar">
       </div>
 
-      <nav class="absolute nav-container backdrop-blur-2xl">
-        <ul  class="underline-nav nav-list ml-30">
-          <li class="mr-12">
+      <nav id="nav-container" class="fixed nav-container backdrop-blur-2xl" data-visible="false"><!-- absolute nav-container -->
+        <ul class="underline-nav nav-list md:right-0"><!-- ml-30-->
+          <li class="md:mr-9"> <!-- mr-12 -->
             <span class="numbers">00</span>
               <a href="./index.html">Home</a>
           </li>
-          <li class="mr-12 ">
-            <span class="numbers">01</span>
+          <li class="md:mr-9">
+            <span class="numbers" aria-hidden="true">01</span>
             <a href="./destination-moon.html">Destination</a>
           </li>
-          <li class="mr-12">
-            <span class="numbers">02</span>
+          <li class="md:mr-9">
+            <span class="numbers aria-hidden="true"">02</span>
             <a href="./crew-commander.html">Crew</a>
           </li>
-          <li class="active">
-            <span class="numbers">03</span>
+          <li class="active md:mr-11 lg:mr-28">
+            <span class="numbers aria-hidden="true"">03</span>
             <a href="./technology-vehicle.html">Technology</a>
           </li>
         </ul>
       </nav>
+
+      <button class="menu-icon" aria-controls="nav-container" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
     </header>
 
     <!-- The Main Section -->
-    <div class="absolute text-white top-52 left-40
-    font-Barlow-Condensed tracking-custom-widest leading-8">
-      <p class="uppercase  text-2.5xl">
-        <span class="font-bold opacity-25 mix-blend-normal mr-7">03</span>
-        Space launch 101
-      </p>
-    </div>
-    <section class="tech-nav absolute top-96 left-40">
-        <a class="" href="./technology-vehicle.html">
+    <p class="destination-heading absolute w-60 text-white top-22 left-0 right-0 ml-auto mr-auto tracking-nav-text font-Barlow-Condensed uppercase text-.5xl text-center
+    md:top-34 md:left-10 md:w-72 md:m-0 md:text-xl lg:top-54 lg:left-40 lg:w-80 lg:text-2.5xl lg:tracking-custom-widest">
+      <span class="font-bold opacity-25 mix-blend-normal mr-4"> 03</span>
+      Space launch 101
+    </p>
+
+    <section class="tech-nav w-40 flex flex-row justify-center absolute top-82
+    md:top-110 md:w-60 lg:flex-col lg:mx-0 lg:w-16 lg:top-96">
+        <a class="mr-4 lg:mb-8" href="./technology-vehicle.html">
           1
         </a>
-        <a class="" href="./technology-spaceport.html">
+        <a class="mr-4 lg:mb-8" href="./technology-spaceport.html">
           2
         </a>
         <a class="active" href="./technology-capsule.html">
@@ -68,21 +72,23 @@
         </a>
     </section>
 
-    <article class="absolute w-110 top-96 left-80">
-      <h3 class="terminology">The terminology...</h3>
-      <h2 class="font-Bellefair text-white uppercase text-5.5xl leading-none mt-4 mb-6.5">Space capsule</h2>
-        <section class="about w-109">
+    <article class="tech-article absolute text-center lg:m-0 lg:top-96 lg:text-left">
+
+      <section class="absolute top-11 md:top-0">
+        <h3 class="terminology md:text-.5xl">The terminology...</h3>
+        <h2 class="spaceShips font-Bellefair text-white uppercase text-2xl leading-none mt-4 mb-6.5
+        lg:w-112">Space capsule</h2>
+        <p class="about lg:text-.75xl">
           A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
           capsule to reenter the Earth's atmosphere without wings. Our capsule is where
           you'll spend your time during the flight. It includes a space gym, cinema,
           and plenty of other activities to keep you entertained.
-        </section>
-        <!-- Path Buttons -->
+        </p>
+      </section>
     </article>
 
   <!-- The Image -->
-    <aside class="absolute top-68 right-0">
-      <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="spaceport">
-    </aside>
+    <aside class="tech-image bg-capsule-landscape absolute lg:bg-capsule-portrait"></aside>
+
 </body>
 </html>

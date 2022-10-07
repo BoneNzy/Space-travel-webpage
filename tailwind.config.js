@@ -23,7 +23,16 @@ module.exports = {
         'background-crew-tab': "url('../assets/crew/background-crew-tablet.jpg')",
         'background-crew-mobile': "url('../assets/crew/background-crew-mobile.jpg')",
         // technology
-        'background-tech': "url('../assets/technology/background-technology-desktop.jpg')",
+        'background-tech-desk': "url('../assets/technology/background-technology-desktop.jpg')",
+        'background-tech-tab': "url('../assets/technology/background-technology-tablet.jpg')",
+        'background-tech-mobile': "url('../assets/technology/background-technology-mobile.jpg')",
+        // tech-portrait-landscape
+        'vehicle-portrait': "url('../assets/technology/image-launch-vehicle-portrait.jpg')",
+        'vehicle-landscape': "url('../assets/technology/image-launch-vehicle-landscape.jpg')",
+        'capsule-portrait': "url('../assets/technology/image-space-capsule-portrait.jpg')",
+        'capsule-landscape': "url('../assets/technology/image-space-capsule-landscape.jpg')",
+        'spaceport-portrait': "url('../assets/technology/image-spaceport-portrait.jpg')",
+        'spaceport-landscape': "url('../assets/technology/image-spaceport-landscape.jpg')",
       },
       margin: {
         '0.6': '0.688rem',
@@ -34,7 +43,7 @@ module.exports = {
       },
       fontSize: {
         '.5xl': '1rem',
-        '1.5xl': '1.25rem',
+        '.75xl': '1.125rem',
         '2.5xl': '1.75rem',
         '3.5xl': '2rem',
         '4.5xl': '2.5rem',
@@ -70,6 +79,7 @@ module.exports = {
         '2.125': '2.125rem',
         '42': '170px',
         '68': '17rem',
+        '74': '19rem',
         '86': '23rem',
       },
       letterSpacing: {
