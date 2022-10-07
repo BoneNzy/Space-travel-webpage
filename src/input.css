@@ -137,7 +137,7 @@ body {
 
 .role {
     font-family: 'Bellefair';
-    font-size: 32px;
+    font-size: 16px;
     color: white;
     opacity: .5;
     text-transform: uppercase;
@@ -157,7 +157,7 @@ body {
     cursor: pointer;
     border: 0;
     border-radius: 50%;
-    padding: .5rem;
+    padding: 6px;
 
     background-color: white;
     opacity: 0.30;
@@ -240,8 +240,21 @@ body {
 .menu-icon[aria-expanded="true"] {
     background-image: url('../assets/shared/icon-close.svg');
 }
+
+/********** crew ***********/
+.crew-article {
+    top: 415px;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+.crew-image {
+    border-bottom: 1px solid #383B4B;
+    top: 8.5rem;
+}
+
   /* ----------------Responsive------------------ */
-@media (min-width: 48rem) and (max-width: 64rem) {
+@media (min-width: 48rem) and (max-width: 66rem) {
     .numbers {
         display: none;
     }
@@ -287,6 +300,12 @@ body {
     .destination-heading {
         letter-spacing: 3.3px;
     }
+    .dot-button> * {
+        padding: 8px;
+    }
+    .crew-image {
+        top: 31rem;
+    }
 }
 /* desktop */
  @media (min-width:64rem) {
@@ -320,7 +339,16 @@ body {
         top: 0;
     }
     .about {
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .crew-article {
+        left: 6rem;
+    }
+    .crew-image {
+        width: 25rem;
+        margin: 0;
+        left: 38rem;
+        top: 20rem;
     }
  }
  @media (min-width:82rem) {
@@ -337,6 +365,15 @@ body {
         left: 52rem;
         top: 0;
     }
+    .crew-article {
+        left: 10rem;
+    }
+    .crew-image {
+        width: 34rem;
+        margin: 0;
+        left: 45rem;
+        top: 15rem;
+    }
  }
  @media (min-width:102rem) {
     .explore {
@@ -344,5 +381,8 @@ body {
     }
     .destination-image {
         left: 14rem;
+    }
+    .crew-image {
+        left: 46rem;
     }
  }

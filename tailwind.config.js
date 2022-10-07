@@ -19,7 +19,9 @@ module.exports = {
         'background-dest-tab': "url('../assets/destination/background-destination-tablet.jpg')",
         'background-dest-mobile': "url('../assets/destination/background-destination-mobile.jpg')",
         // crew
-        'background-crew': "url('../assets/crew/background-crew-desktop.jpg')",
+        'background-crew-desk': "url('../assets/crew/background-crew-desktop.jpg')",
+        'background-crew-tab': "url('../assets/crew/background-crew-tablet.jpg')",
+        'background-crew-mobile': "url('../assets/crew/background-crew-mobile.jpg')",
         // technology
         'background-tech': "url('../assets/technology/background-technology-desktop.jpg')",
       },
@@ -32,7 +34,10 @@ module.exports = {
       },
       fontSize: {
         '.5xl': '1rem',
+        '1.5xl': '1.25rem',
         '2.5xl': '1.75rem',
+        '3.5xl': '2rem',
+        '4.5xl': '2.5rem',
         '5.5xl': '3.5rem',
         '7.5xl': '5rem',
         '8.5xl': '6.25rem',
@@ -86,6 +91,7 @@ module.exports = {
         '50': '12.6rem',
         '54': '13.75rem',
         '68': '17rem',
+        '74': '18.5rem',
         '76': '19rem',
         '82': '21rem',
         '83': '21.5rem',
@@ -93,6 +99,7 @@ module.exports = {
         '98': '25rem',
         '102': '29rem',
         '103': '29.3rem',
+        '105': '31rem',
         '110': '36rem',
         '114': '40rem',
         '116': '43rem',
